@@ -1,5 +1,5 @@
 import React from 'react';
-import { t, props } from 'revenge';
+import { t, props } from 'tcomb-react';
 
 import './mailchimpForm.scss';
 
@@ -13,12 +13,13 @@ export default class MailchimpForm extends React.Component {
 
   static defaultProps = {
     title: '',
+    subtitle: '',
     buttonTitle: 'Subscribe'
   };
 
   mailchimpGeneratedForm = () => `
     <div>
-      <form action="//scala-italy.us10.list-manage.com/subscribe/post?u=bd47f4303f207958b0a0d6ed2&amp;id=a72dbaebac" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <form action="//scala-italy.us10.list-manage.com/subscribe/post?u=bd47f4303f207958b0a0d6ed2&amp;id=4047a83802" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <div style="text-align: center">
     <h2>${this.props.title}</h2>
     <h3>${this.props.subtitle}</h3>
@@ -40,7 +41,7 @@ export default class MailchimpForm extends React.Component {
     return (
       <div
         style={this.props.style}
-        className="mailchimp-form"
+        className='mailchimp-form'
         dangerouslySetInnerHTML={{ __html: this.mailchimpGeneratedForm() }}
       />
     );

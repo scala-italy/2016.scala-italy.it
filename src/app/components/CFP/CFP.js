@@ -1,6 +1,7 @@
 import React from 'react';
-import { props, pure, skinnable } from 'revenge';
-import { Button, FlexView } from 'Basic';
+import { props } from 'tcomb-react';
+import { pure, skinnable } from 'revenge';
+import { Button, FlexView as View } from 'Basic';
 
 import './cfp.scss';
 
@@ -9,7 +10,7 @@ import './cfp.scss';
 @props({ })
 export default class CFP extends React.Component {
 
-  onBecomeSpeakerClick = () => window.open('https://scalaitaly.typeform.com/to/MeZSjq', '_blank');
+  onBecomeSpeakerClick = () => window.open('https://scalaitaly.typeform.com/to/iJyXpo', '_blank');
 
   getLocals() {
     const {
@@ -21,22 +22,22 @@ export default class CFP extends React.Component {
 
   template({ onBecomeSpeakerClick }) {
     return (
-      <FlexView row grow auto className='cfp' hAlignContent='center'>
+      <View grow auto className='cfp' hAlignContent='center'>
         <div className='section-name left'>Become a speaker</div>
         <div className='section-name right'>Become a speaker</div>
-        <FlexView style={{ maxWidth: 900 }} className='wrapper'>
-          <FlexView column grow={1} hAlignContent='center'>
+        <View style={{ maxWidth: 900 }} className='wrapper'>
+          <View column grow width='30%' hAlignContent='center'>
             <span className='code-title' />
             <Button className='action-button' buttonState='ready' onClick={onBecomeSpeakerClick}>Become a Speaker</Button>
-          </FlexView>
-          <FlexView column grow={3} className='cfp-description'>
+          </View>
+          <View column grow width='70%' className='cfp-description' marginLeft='30px'>
             <h3>Come give a talk at Scala Italy!</h3>
             <p>
-              Submit your proposal by <strong>April 3rd</strong> and come share your knowledge with the community!
+              Submit your proposal and come share your knowledge with the community!
             </p>
-          </FlexView>
-        </FlexView>
-      </FlexView>
+          </View>
+        </View>
+      </View>
     );
   }
 

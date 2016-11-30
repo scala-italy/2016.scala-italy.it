@@ -8,7 +8,7 @@ case $1 in
 esac
 
 BUCKET_URL="s3://$PREFIX"
-BUCKET_URL+="2016.scala-italy.it"
+BUCKET_URL+="2017.scala-italy.it"
 
 npm run build
 
