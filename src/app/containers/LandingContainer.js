@@ -3,9 +3,9 @@ import { t, props } from 'tcomb-react';
 import { pure } from 'revenge';
 import Cover from 'Cover/Cover';
 import Cfp from 'CFP/CFP';
-// import Footer from 'Footer/Footer';
+import Speakers from 'Speakers/Speakers';
+import Footer from 'Footer/Footer';
 // import Conference from 'Conference/Conference';
-// import Speakers from 'Speakers/Speakers';
 // import Schedule from 'Schedule/Schedule';
 // import Sponsors from 'Sponsors/Sponsors';
 // import Map from 'Map/Map';
@@ -36,13 +36,14 @@ export default class LandingContainer extends React.Component {
       <FlexView column>
         <Cover onArrowClick={this.onArrowClick} />
         <Cfp />
-        {/*
-        <Conference />
         <Speakers
           speakerId={this.props.params.speakerName}
           onSpeakerClick={this.onSpeakerClick}
           onSpeakerModalClose={this.onSpeakerModalClose}
         />
+        <Footer />
+        {/*
+        <Conference />
         <Schedule />
         <Map />
         <Sponsors />

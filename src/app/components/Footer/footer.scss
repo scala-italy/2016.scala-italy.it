@@ -2,7 +2,8 @@
 
 .footer {
   background-color: $navy;
-  color: $gunmetal;
+  color: $silver;
+  font-family: 'Monaco', 'Inconsolata', monospace;
 
   h3, h4 {
     color: $white;
@@ -55,6 +56,7 @@
     .social-button {
       margin: 10px;
       max-width: 100px;
+      padding: 5px 10px;
       border: 2px solid $silver;
       background-color: transparent;
       color: $silver;
@@ -69,6 +71,11 @@
       &:hover {
         color: darken($silver, 50%);
         background-color: lighten($silver, 10%);
+      }
+
+      .button-label {
+        margin-left: 4px;
+        line-height: initial;
       }
     }
   }

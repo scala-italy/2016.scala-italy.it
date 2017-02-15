@@ -8,12 +8,12 @@ import './footer.scss';
 import buildo from 'assets/images/buildo.png';
 import databiz from 'assets/images/databiz_white.png';
 import sugMilano from 'assets/images/sug-milano.png';
-import sugTreviso from 'assets/images/sug-lagoon.jpg';
-import sugTorino from 'assets/images/sug-torino.jpg';
-import jugRoma from 'assets/images/jug-roma.jpg';
-import jugPadova from 'assets/images/jug-padova.jpg';
-import jugMilano from 'assets/images/jug-milano.png';
-import programmersPadua from 'assets/images/pip.png';
+// import sugTreviso from 'assets/images/sug-lagoon.jpg';
+// import sugTorino from 'assets/images/sug-torino.jpg';
+// import jugRoma from 'assets/images/jug-roma.jpg';
+// import jugPadova from 'assets/images/jug-padova.jpg';
+// import jugMilano from 'assets/images/jug-milano.png';
+// import programmersPadua from 'assets/images/pip.png';
 
 @pure
 @skinnable()
@@ -24,7 +24,7 @@ export default class Footer extends React.Component {
 
   onGPlusClick = () => window.open('https://plus.google.com/communities/107201018445276034960', '_blank');
 
-  onGetTicketsClick = () => window.open('https://ti.to/scala-italy/2016', '_blank');
+  onGetTicketsClick = () => window.open('https://ti.to/scala-italy/2017', '_blank');
 
   getLocals() {
     const {
@@ -48,7 +48,7 @@ export default class Footer extends React.Component {
             </FlexView>
             <FlexView auto vAlignContent='center' grow row className='second-row' wrap>
               <FlexView grow={5} auto>
-                <span className='email'>info@scala-italy.it</span>
+                <span className='email'><a href='mailto:info@scala-italy.it' target='_blank'>info@scala-italy.it</a></span>
               </FlexView>
               <FlexView grow={1} auto>
                 <Button icon='twitter' buttonState='ready' className='social-button' onClick={onTwitterClick}>
@@ -56,7 +56,7 @@ export default class Footer extends React.Component {
                 </Button>
               </FlexView>
               <FlexView grow={1} auto>
-                <Button icon='google-plus' buttonState='ready' className='social-button' onClick={onGPlusClick}>
+                <Button icon='google-plus' className='social-button' onClick={onGPlusClick}>
                   google+
                 </Button>
               </FlexView>
@@ -64,7 +64,8 @@ export default class Footer extends React.Component {
           </FlexView>
           <FlexView column grow className='footer-section tickets' hAlignContent='center' vAlignContent='center'>
             <h3>TICKETS</h3>
-            <Button buttonState='ready' className='action-button ticket-button' label='get your tickets' onClick={this.onGetTicketsClick} />
+            <FlexView>Coming soon</FlexView>
+            {/*<Button buttonState='ready' className='action-button ticket-button' label='get your tickets' onClick={this.onGetTicketsClick} />*/}
           </FlexView>
         </FlexView>
         <FlexView row width='100%'>
@@ -74,17 +75,19 @@ export default class Footer extends React.Component {
               <a href='http://databiz.it' target='_blank'><img src={databiz} style={{ maxWidth: 210 }}/></a>
               <a href='http://buildo.io' target='_blank'><img src={buildo} /></a>
               <a href='http://www.meetup.com/milano-scala-group/' target='_blank'><img src={sugMilano} /></a>
+              {/*
               <a href='http://www.meetup.com/it-IT/Scala-by-the-Lagoon/' target='_blank'><img src={sugTreviso} /></a>
               <a href='http://www.meetup.com/it-IT/Torino-Scala-Programming-Big-Data-Meetup/' target='_blank'><img src={sugTorino} /></a>
               <a href='https://groups.yahoo.com/neo/groups/jug-roma/info' target='_blank'><img src={jugRoma} /></a>
               <a href='http://www.jugpadova.it/' target='_blank'><img src={jugPadova} /></a>
               <a href='http://www.jugmilano.it/' target='_blank'><img src={jugMilano} /></a>
               <a href='http://programmersinpadua.github.io' target='_blank'><img src={programmersPadua} /></a>
+              */}
             </FlexView>
           </FlexView>
         </FlexView>
         <FlexView className='bottom-line' width='100%' hAlignContent='center' vAlignContent='center'>
-          @ 2016 Implicitaly Srlsu
+          @ 2017 Implicitaly srlsu
         </FlexView>
       </FlexView>
     );

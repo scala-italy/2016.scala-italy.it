@@ -24,8 +24,11 @@
 }
 
 .speaker-bio, .abstract {
-  max-width: 500px;
   margin-top: 30px;
+}
+
+.speaker-bio, .abstract, .title {
+  max-width: 500px;
 
   font-size: 14px;
   font-family: 'Monaco', monospace;
@@ -36,6 +39,11 @@
   }
 }
 
+.title {
+  font-size: 15px;
+  font-weight: bold;
+}
+
 .ReactModal__Overlay {
   cursor: pointer;
   background-color: transparentize($navy, 0.1) !important;
@@ -44,4 +52,8 @@
 .ReactModal__Content {
   cursor: initial;
   padding-top: 40px !important;
+  @media (min-width: 1000px) {
+    left: 20% !important;
+    right: 20% !important;
+  }
 }
