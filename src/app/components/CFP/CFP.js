@@ -35,6 +35,11 @@ export default class CFP extends React.Component {
             <p>
               Submit your proposal and come share your knowledge with the community!
             </p>
+            <p>
+              CFP closes on March 5th.
+            </p>
+            <p>
+            </p>
           </View>
         </View>
       </View>
