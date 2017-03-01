@@ -5,8 +5,8 @@ import { Button, FlexView } from 'Basic';
 
 import './sponsors.scss';
 import databiz from 'assets/images/databiz.png';
-import engineering from 'assets/images/engineering.jpg';
-import unicredit from 'assets/images/unicredit.jpg';
+// import engineering from 'assets/images/engineering.jpg';
+// import unicredit from 'assets/images/unicredit.jpg';
 
 @pure
 @skinnable()
@@ -29,18 +29,20 @@ export default class Sponsors extends React.Component {
         <div className='section-name left'>Sponsors</div>
         <div className='section-name right'>Sponsors</div>
         <FlexView column hAlignContent='center'>
-          <h2>Sponsors</h2>
+          <h3>SPONSORS</h3>
           <h4>Platinum</h4>
           <FlexView>
             <a href='http://databiz.it' target='_blank'><img src={databiz} /></a>
           </FlexView>
-          <FlexView height={50} />
-          <h4>Silver</h4>
-          <FlexView>
-            <a href='http://www.eng.it' target='_blank'><img src={engineering} /></a>
-            <FlexView width={50} />
-            <a href='https://www.unicreditgroup.eu' target='_blank'><img src={unicredit} /></a>
-          </FlexView>
+          {/*
+            <FlexView height={50} />
+            <h4>Silver</h4>
+            <FlexView>
+              <a href='http://www.eng.it' target='_blank'><img src={engineering} /></a>
+              <FlexView width={50} />
+              <a href='https://www.unicreditgroup.eu' target='_blank'><img src={unicredit} /></a>
+            </FlexView>
+          */}
         </FlexView>
         <FlexView basis={50} />
         <FlexView>

@@ -7,8 +7,8 @@ import Speakers from 'Speakers/Speakers';
 import Footer from 'Footer/Footer';
 // import Conference from 'Conference/Conference';
 // import Schedule from 'Schedule/Schedule';
-// import Sponsors from 'Sponsors/Sponsors';
-// import Map from 'Map/Map';
+import Sponsors from 'Sponsors/Sponsors';
+import Map from 'Map/Map';
 import { FlexView } from 'Basic';
 
 @pure
@@ -24,7 +24,7 @@ export default class LandingContainer extends React.Component {
   };
 
   onArrowClick = () => {
-    window.bringIntoView(document.querySelector('.conference'), 500);
+    window.bringIntoView(document.querySelector('.cfp'), 1000);
   };
 
   onSpeakerClick = name => this.context.router.push(`/speakers/${name}`);
@@ -41,12 +41,12 @@ export default class LandingContainer extends React.Component {
           onSpeakerClick={this.onSpeakerClick}
           onSpeakerModalClose={this.onSpeakerModalClose}
         />
+        <Sponsors />
+        <Map />
         <Footer />
         {/*
         <Conference />
         <Schedule />
-        <Map />
-        <Sponsors />
         */}
       </FlexView>
     );

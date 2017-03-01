@@ -64,8 +64,7 @@ export default class Footer extends React.Component {
           </FlexView>
           <FlexView column grow className='footer-section tickets' hAlignContent='center' vAlignContent='center'>
             <h3>TICKETS</h3>
-            <FlexView>Coming soon</FlexView>
-            {/*<Button buttonState='ready' className='action-button ticket-button' label='get your tickets' onClick={this.onGetTicketsClick} />*/}
+            <Button buttonState='ready' className='action-button ticket-button' label='get your tickets' onClick={this.onGetTicketsClick} />
           </FlexView>
         </FlexView>
         <FlexView row width='100%'>

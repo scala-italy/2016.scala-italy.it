@@ -1,8 +1,8 @@
 import React from 'react';
 import { t, props } from 'tcomb-react';
 import { pure, skinnable } from 'revenge';
-import { FlexView } from 'Basic';
-import MailchimpForm from 'MailchimpForm/MailchimpForm';
+import { FlexView, Button } from 'Basic';
+// import MailchimpForm from 'MailchimpForm/MailchimpForm';
 
 import './cover.scss';
 import logo from 'assets/images/logo.png';
@@ -15,6 +15,7 @@ import logo from 'assets/images/logo.png';
 export default class Cover extends React.Component {
 
   onWatchVideosClick = () => window.open('https://vimeo.com/channels/scalaitaly2016');
+  onTicketClick = () => window.open('https://ti.to/scala-italy/2017');
 
   getLocals() {
     const { onArrowClick } = this.props;
@@ -22,15 +23,16 @@ export default class Cover extends React.Component {
     return { onArrowClick };
   }
 
-  template() {
+  template({ onArrowClick }) {
     return (
       <FlexView className='cover-page' grow auto column hAlignContent='center' vAlignContent='center'>
         <div className='logo' src={logo} />
         <h1>The only Italian conference on Scala</h1>
         <h3>Rome, May 13th, 2017</h3>
-        <MailchimpForm title='Interested?' subtitle="Leave your email and we'll keep you posted. No spam, we promise!" />
+        {/* <MailchimpForm title='Interested?' subtitle="Leave your email and we'll keep you posted. No spam, we promise!" /> */}
+        <Button buttonState='ready' className='action-button ticket-button' label='Get your ticket!' onClick={this.onTicketClick} />
         {/* <Button buttonState='ready' className='action-button video-button' label='watch the videos' onClick={this.onWatchVideosClick} /> */}
-        {/*<div className='arrow bounce' onClick={onArrowClick}/> */}
+        <div className='arrow bounce' onClick={onArrowClick}/>
       </FlexView>
     );
   }

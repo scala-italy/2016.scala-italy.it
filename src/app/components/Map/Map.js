@@ -5,6 +5,7 @@ import InfoWindow from 'react-google-maps/lib/InfoWindow';
 import Marker from 'react-google-maps/lib/Marker';
 import { props } from 'tcomb-react';
 import { pure, skinnable } from 'revenge';
+import { FlexView } from 'Basic';
 
 import './map.scss';
 
@@ -16,23 +17,21 @@ export default class Map extends React.Component {
   getLocals() {
     const marker = {
       position: {
-        lat: 45.432457,
-        lng: 12.3142232
+        lat: 41.8966402,
+        lng: 12.5035385
       },
-      key: 'Santa Marta',
+      key: 'Radisson Blu Hotel',
       defaultAnimation: 2
     };
 
     const infoWindow = {
       content: (
         <div>
-          <div>Università IUAV di Venezia IUAV</div>
-          <strong>Ex Cotonificio Veneziano Santa Marta</strong>
-          <div>Dorsoduro 2196</div>
-          <div>30123 Venezia</div>
+          <strong><a href='https://www.radissonblu.com/en/eshotel-rome' target='blank'>Radisson Blu Hotel</a></strong>
+          <div>Via Filippo Turati, 171</div>
+          <div>00185 Roma</div>
         </div>
       )
-      // address: 'Dorsoduro 2196\n30123 Venezia'
     };
 
     return { marker, infoWindow };
@@ -40,23 +39,30 @@ export default class Map extends React.Component {
 
   template({ marker, infoWindow }) {
     return (
-      <GoogleMapLoader
-        containerElement={<div className='map' />}
-        googleMapElement={(
-          <GoogleMap
-            defaultCenter={marker.position}
-            defaultZoom={14}
-            options={{ scrollwheel: false, draggable: false }}
-          >
-            <Marker {...marker}>
-              <InfoWindow>
-                {infoWindow.content}
-              </InfoWindow>
-            </Marker>
-          </GoogleMap>
-        )}
-      />
+      <FlexView column className='venue'>
+        <FlexView hAlignContent='center'>
+          <h3>VENUE</h3>
+        </FlexView>
+        <FlexView>
+          <GoogleMapLoader
+            containerElement={<div style={{ width: '100%' }} className='map' />}
+            googleMapElement={(
+              <GoogleMap
+                defaultCenter={marker.position}
+                defaultZoom={14}
+                options={{ scrollwheel: false, draggable: false }}
+              >
+                <Marker {...marker}>
+                  <InfoWindow>
+                    {infoWindow.content}
+                  </InfoWindow>
+                </Marker>
+              </GoogleMap>
+            )}
+          />
+          <img className='venue-picture' height='400px' src={require('assets/images/radisson.jpg')} />
+        </FlexView>
+      </FlexView>
     );
   }
-
 }

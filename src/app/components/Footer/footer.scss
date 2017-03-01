@@ -88,6 +88,8 @@
     font-weight: bold;
     background-color: $neonRed;
     margin-top: 30px;
+    padding: 8px 10px;
+    cursor: pointer;
 
     @media only screen and (max-width: 500px) {
       font-size: 12px;

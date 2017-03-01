@@ -44,6 +44,12 @@
   font-weight: bold;
 }
 
+.co-speaker {
+  margin-top: 4px;
+  font-size: 13px;
+  font-family: 'Monaco', monospace;
+}
+
 .ReactModal__Overlay {
   cursor: pointer;
   background-color: transparentize($navy, 0.1) !important;

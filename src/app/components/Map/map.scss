@@ -1,8 +1,19 @@
-.map {
-  height: 400px;
+.venue {
+  background-color: #f7f7f7;
+  padding-bottom: 40px;
 
-  .gm-style-iw + div {
-    display: none;
+  .map {
+    height: 400px;
+
+    .gm-style-iw + div {
+      display: none;
+    }
+
   }
 
+  @media (max-width: 960px) {
+    .venue-picture {
+      display: none;
+    }
+  }
 }

@@ -4,6 +4,7 @@ import { pure, skinnable } from 'revenge';
 import { FlexView } from 'Basic';
 import Speaker from './Speaker';
 import Modal from 'react-modal';
+import { Link } from 'react-router';
 
 import { speakers, keynotes } from 'speakers';
 import './speakers.scss';
@@ -64,6 +65,11 @@ export default class Speakers extends React.Component {
             <FlexView className='title'>
               {speaker && speaker.title}
             </FlexView>
+            {speaker && speaker.cospeaker && (
+              <FlexView className='co-speaker'>
+                Co-presented with&nbsp;<Link to={`speakers/${speaker.cospeaker.id}`}>{speaker.cospeaker.name}</Link>
+              </FlexView>
+            )}
             <FlexView className='abstract'>
               {speaker && speaker.abstract}
             </FlexView>
