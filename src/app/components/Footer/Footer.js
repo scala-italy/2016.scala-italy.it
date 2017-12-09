@@ -8,12 +8,19 @@ import './footer.scss';
 import buildo from 'assets/images/buildo.png';
 import databiz from 'assets/images/databiz_white.png';
 import sugMilano from 'assets/images/sug-milano.png';
-// import sugTreviso from 'assets/images/sug-lagoon.jpg';
-// import sugTorino from 'assets/images/sug-torino.jpg';
+import sugTreviso from 'assets/images/sug-lagoon.jpg';
+import sugTorino from 'assets/images/sug-torino.jpg';
 // import jugRoma from 'assets/images/jug-roma.jpg';
 // import jugPadova from 'assets/images/jug-padova.jpg';
-// import jugMilano from 'assets/images/jug-milano.png';
-// import programmersPadua from 'assets/images/pip.png';
+import jugMilano from 'assets/images/jug-milano.png';
+import scalac from 'assets/images/scalac.png';
+import devday from 'assets/images/devday.png';
+import programmersPadua from 'assets/images/pip.png';
+import clubSviluppatori from 'assets/images/clubSviluppatori.png';
+import codegarden from 'assets/images/codegarden.png';
+import scalatimes from 'assets/images/scalatimes.png';
+import manning from 'assets/images/manning.jpg';
+import askanews from 'assets/images/askanews.png';
 
 @pure
 @skinnable()
@@ -73,14 +80,21 @@ export default class Footer extends React.Component {
             <FlexView row shrink wrap className='partners-logos' hAlignContent='center' vAlignContent='center'>
               <a href='http://databiz.it' target='_blank'><img src={databiz} style={{ maxWidth: 210 }}/></a>
               <a href='http://buildo.io' target='_blank'><img src={buildo} /></a>
+              <a href='http://www.scalac.io/' target='_blank'><img src={scalac} /></a>
               <a href='http://www.meetup.com/milano-scala-group/' target='_blank'><img src={sugMilano} /></a>
-              {/*
               <a href='http://www.meetup.com/it-IT/Scala-by-the-Lagoon/' target='_blank'><img src={sugTreviso} /></a>
               <a href='http://www.meetup.com/it-IT/Torino-Scala-Programming-Big-Data-Meetup/' target='_blank'><img src={sugTorino} /></a>
+              <a href='http://www.jugmilano.it/' target='_blank'><img src={jugMilano} /></a>
+              <a href='http://www.programmersinpadua.it' target='_blank'><img src={programmersPadua} /></a>
+              <a href='http://www.devday.it/' target='_blank'><img src={devday} /></a>
+              <a href='https://www.facebook.com/groups/cdspuglia/' target='_blank'><img src={clubSviluppatori} /></a>
+              <a href='https://www.facebook.com/groups/codegardenroma/' target='_blank'><img src={codegarden} /></a>
+              <a href='http://scalatimes.com/' target='_blank'><img src={scalatimes} /></a>
+              <a href='http://manning.com/' target='_blank'><img src={manning} style={{ maxWidth: 250 }} /></a>
+              <a href='http://www.askanews.it' target='_blank'><img src={askanews} style={{ maxWidth: 250 }} /></a>
+              {/*
               <a href='https://groups.yahoo.com/neo/groups/jug-roma/info' target='_blank'><img src={jugRoma} /></a>
               <a href='http://www.jugpadova.it/' target='_blank'><img src={jugPadova} /></a>
-              <a href='http://www.jugmilano.it/' target='_blank'><img src={jugMilano} /></a>
-              <a href='http://programmersinpadua.github.io' target='_blank'><img src={programmersPadua} /></a>
               */}
             </FlexView>
           </FlexView>

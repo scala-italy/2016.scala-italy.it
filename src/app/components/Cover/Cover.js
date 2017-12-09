@@ -14,7 +14,7 @@ import logo from 'assets/images/logo.png';
 })
 export default class Cover extends React.Component {
 
-  onWatchVideosClick = () => window.open('https://vimeo.com/channels/scalaitaly2016');
+  onWatchVideosClick = () => window.open('https://vimeo.com/channels/scalaitaly2017');
   onTicketClick = () => window.open('https://ti.to/scala-italy/2017');
 
   getLocals() {
@@ -30,8 +30,8 @@ export default class Cover extends React.Component {
         <h1>The only Italian conference on Scala</h1>
         <h3>Rome, May 13th, 2017</h3>
         {/* <MailchimpForm title='Interested?' subtitle="Leave your email and we'll keep you posted. No spam, we promise!" /> */}
-        <Button buttonState='ready' className='action-button ticket-button' label='Get your ticket!' onClick={this.onTicketClick} />
-        {/* <Button buttonState='ready' className='action-button video-button' label='watch the videos' onClick={this.onWatchVideosClick} /> */}
+        {/*<Button buttonState='ready' className='action-button ticket-button' label='Get your ticket!' onClick={this.onTicketClick} /> */}
+        <Button buttonState='ready' className='action-button video-button' label='watch the videos' onClick={this.onWatchVideosClick} />
         <div className='arrow bounce' onClick={onArrowClick}/>
       </FlexView>
     );

@@ -53,32 +53,36 @@ export const keynotes = {
         </p>
       </div>
     ,
-    title: 'To be announced'
+    title: 'Scala Is The Next Scala',
+    abstract:
+      <div>
+        <p>Kevin Webber, CEO of RedElastic, will discuss reasons why Scala will likely remain a specialized programming language, and why becoming The Next Java isn’t what the Scala community needs in order to continue fostering a vibrant community, culture, and ecosystem.</p>
+
+        <p>The Rule Of Least Power is the philosophy of using the least powerful technology capable of solving a given problem, which is the philosophy that lead to the development of modern generalist languages like Google’s Go. Even more profound are the changes to modern systems architectures; today, a modern system might be composed of tens or hundreds of discrete services. No longer do teams need to choose a single language to accomplish the difficult task of launching a production-grade system, now teams can be very specific about which language is best suited to an individual component of a system. These trends in software development takes the pressure off of Scala to become The Next Java, which gives the Scala community the opportunity to focus on the essence of what makes Scala unique, and why it might be the language of choice to leverage against the most exciting opportunities in your business.</p>
+
+        <p>Drawing on almost ten years of Scala experience, along with meeting hundreds of technology leaders who are using Scala on mission-critical projects, Kevin will draw on these experiences to discuss the past of Scala and where the language and ecosystem may evolve to over the next decade.</p>
+      </div>
   },
-  misterx: {
-    name: '',
-    company: '',
-    pictureUrl: require('assets/images/speakers/misterx.png'),
+  wehden: {
+    name: 'Karl Wehden',
+    company: 'Lightbend',
+    pictureUrl: require('assets/images/speakers/wehden.jpg'),
     color: '#799100',
-    bio: '',
-    title: ''
+    bio:
+      <div>
+        <p>
+          Karl Wehden is Director of Product Management at Lightbend, formerly Typesafe responsible for cloud and fast data products.
+        </p>
+        <p>
+          He joined Lightbend from IBM, where he was Program Director for Advanced Analytics, Machine Learning and Big Data. His ongoing focus has been the development, marketing and sales strategy for highly scalable, safe and functional systems. He has worked as a program director at Oracle focused on capital markets, spent time as a VP of information security at Morgan Stanley, as well as several successful bay area startups.
+        </p>
+      </div>,
+    title: 'The batch to streaming journey: Applying Reactive principles to streaming systems in Fast Data',
+    abstract:
+      <div>
+        As data processing workloads continue to outstrip our ability to process them in batch, both in terms of volume and operational ability, we are turning more and more frequently to streaming data processing frameworks and tools.  The cost of these changes come in the form of increased operational overhead, the introduction of machine learning training and scoring, and the myriad of signals that make up the streaming universe.  We will explore some of the key trends, obstacles and potential solutions to issues Lightbend sees ahead, and apply the principles of reactive software to streaming frameworks to create an era of responsive, resilient, elastic, and message driven systems of services.
+      </div>
   }
-  // wehden: {
-  //   name: 'Karl Wehden',
-  //   company: 'Lightbend',
-  //   pictureUrl: require('assets/images/speakers/wehden.jpg'),
-  //   color: '#799100',
-  //   bio:
-  //     <div>
-  //       <p>
-  //         Karl Wehden is Director of Product Management at Lightbend, formerly Typesafe responsible for cloud and fast data products.
-  //       </p>
-  //       <p>
-  //         He joined Lightbend from IBM, where he was Program Director for Advanced Analytics, Machine Learning and Big Data. His ongoing focus has been the development, marketing and sales strategy for highly scalable, safe and functional systems. He has worked as a program director at Oracle focused on capital markets, spent time as a VP of information security at Morgan Stanley, as well as several successful bay area startups.
-  //       </p>
-  //     </div>,
-  //   title: 'To be announced'
-  // }
 };
 
 export const speakers = {
@@ -107,10 +111,11 @@ export const speakers = {
         <p>I am the creator of the specs2 library for software specifications in Scala and more recently of the eff library, an alternative to monad transformers.</p>
         <p>I really enjoy functional programming and love to share that journey with other developers.</p>
       </div>,
-    title: 'The Eff monad, one monad to rule them all',
+    title: 'Practical Eff monad for micro-services',
     abstract:
       <div>
-        Monad transformers are a neat way to compose effectful computations: pass some configuration, read/write from disk, track errors... However they can be a bit cumbersome to deal with, especially if you want to use different stacks sharing some common effects: for example a stack to interact with AWS and another one for Hadoop computations. This talk will shortly introduce monad transformers in Scala and their drawbacks then present the Eff monad. The Eff monad has some really interesting properties: - effects can be developed completely independently from each other - effects can be interpreted in different ways and the interpreters can be composed together - it is based on an efficient "Free monad" (avoiding the issue of quadratic flatMaps) - with the Eff monad you will never have to re-implement the Monad operations (point / flatMap) again!
+        This talk presents how we use the Eff monad at Zalando to structure a REST microservice. Even when programming with functions, modules and components still matter, and I will present a new approach for dependency injection using the Reader monad (classic) and tree rewriting (what?). Then we will see how to specify more precisely the service components (authentication, request to other services, database access) with the Eff monad and support additional concerns like logging or asynchronous execution.
+        Once you get the basic idea, the possibilities are endless! Rate limiting is just another component and another set of effects involving time and state, testing becomes really clean and easy.
       </div>
   },
   dotta: {
@@ -164,44 +169,99 @@ export const speakers = {
         <p>Sit tight and let’s cut down on compilation time!</p>
       </div>
   },
-  mistera: {
-    name: '',
-    company: '',
-    pictureUrl: require('assets/images/speakers/misterx.png'),
+  sfregola: {
+    name: 'Daniela Sfregola',
+    company: 'Daniela Tech LTD',
+    pictureUrl: require('assets/images/speakers/sfregola.png'),
     color: '#799100',
-    bio: 'To be announced',
-    title: 'To be announced'
+    bio:
+      <div>
+        <p>Daniela Sfregola is a Software Consultant based in London, UK.</p>
+        <p>She is an active contributor to the Scala Community and a passionate blogger at <a href='http://danielasfregola.com' target='_blank'>danielasfregola.com</a>.</p>
+      </div>,
+    title: 'A practical introduction to Category Theory',
+    abstract:
+      <div>
+        <p>Category Theory has become one of the hot topics in our community. Why is this theory suddenly so interesting for developers? Why are the cool kids talking so much about it? How can we apply its principles in our code?</p>
+
+        <p>This talk will introduce the general principles behind Category Theory, it will show practical examples of how this theory has managed to simplify and solve common challenges that we encounter in our code daily.</p>
+      </div>
   },
-  misterb: {
-    name: '',
-    company: '',
-    pictureUrl: require('assets/images/speakers/misterx.png'),
-    color: '#C31048',
-    bio: 'To be announced',
-    title: 'To be announced'
-  },
-  misterc: {
-    name: '',
-    company: '',
-    pictureUrl: require('assets/images/speakers/misterx.png'),
-    color: '#799100',
-    bio: 'To be announced',
-    title: 'To be announced'
-  },
-  mistere: {
-    name: '',
-    company: '',
-    pictureUrl: require('assets/images/speakers/misterx.png'),
-    color: '#C31048',
-    bio: 'To be announced',
-    title: 'To be announced'
-  },
-  misterf: {
-    name: '',
-    company: '',
-    pictureUrl: require('assets/images/speakers/misterx.png'),
+  lacava: {
+    name: 'Alessandro Lacava',
+    company: 'Freelance',
+    pictureUrl: require('assets/images/speakers/lacava.jpg'),
     color: '#B3810D',
-    bio: 'To be announced',
-    title: 'To be announced'
+    bio:
+      <div>
+        <p>Alessandro Lacava has been programming since 1989. He wrote his first LOC in Pascal at the age of thirteen.</p>
+        <p>He gained an extensive experience with object-oriented design and programming before falling in love with functional programming and type systems which, at the moment, remain his main interests.</p>
+        <p>Alessandro is a freelance and works as a lead Scala designer and developer for Italiaonline.</p>
+      </div>,
+    title: 'Raising the abstraction level with HKTs and type classes',
+    abstract:
+      <div>
+        <p>I suppose it’s an objective of every developer writing reusable code. Statically typed FP and higher-kinded types lets you raise the abstraction level enormously with respect to OOP and, more generally, languages which don’t have HKTs and type classes.</p>
+        <p>In this talk, after an introduction to some funny-named type classes, you’ll see how to take advantage of them to implement a very reusable function. I’ll start by implementing it using a quick & dirty approach and then trying to make it more abstract and reusable thanks to more or less known type classes, actually making sense of them so you can see they are not just confined to theory and useless in practice.</p>
+      </div>
+  },
+  bernhardt: {
+    name: 'Manuel Bernhardt',
+    company: 'manuel.bernhardt.io',
+    pictureUrl: require('assets/images/speakers/bernhardt.jpg'),
+    color: '#799100',
+    bio:
+      <div>
+        <p>Manuel Bernhardt is a passionate engineer, author, speaker and consultant who has a keen interest in the science of building and operating networked applications that run smoothly despite their distributed nature. Since 2008, he has guided and trained enterprise teams on the transformation to distributed computing. In recent years he is focusing primarily on production systems that embrace the reactive application architecture, using Akka, Play Framework, Scala and Java to this end.</p>
+        <p>Manuel likes to travel and is a frequent speaker at international conferences. He lives in Vienna where he is a co-organizer of the Scala Vienna User Group. Next to thinking, talking about and fiddling with computers he likes to spend time with his family, run, scuba-dive and read. You can find out more about Manuel's recent work at <a href='http://manuel.bernhardt.io' target='_blank'>http://manuel.bernhardt.io</a>.</p>
+      </div>,
+    title: '8 Akka anti-patterns you\'d better be aware of',
+    abstract:
+      <div>
+        <p>CAUTION: If you are responsible for an Akka system deployed to production, attending this talk may cause intense moments of self-doubt, stress and possibly panic.</p>
+        <p>Akka is a toolkit for building highly concurrent and distributed applications on the JVM using the actor model. Given the prevalence of frameworks over toolkits and models in the industry, it is easy to forget that the former will not prevent you from using them in any way you please – including ways that are possibly suboptimal or perhaps even harmful.</p>
+        <p>In this talk you'll learn about a few of the most common anti-patterns related to Akka usage. You'll also get to know about alternative and more appropriate solutions to use for each one of those anti-patterns. It should be noted that these suboptimal uses of Akka are not merely theoretical ponderings but real and recurring observations that the speaker made during a range.</p>
+      </div>
+  },
+  sciabarra: {
+    name: 'Michele Sciabarra',
+    company: 'Sciabarra.com ltd',
+    pictureUrl: require('assets/images/speakers/sciabarra.jpg'),
+    color: '#C31048',
+    bio:
+      <div>
+        <p>Michele Sciabarra is a Java veteran,  who started writing Java applets compiled with Netscape Navigator 2, when Java was at version alpha. Since then he traversed the Java world for two decades, coding Web applications, GUI interfaces and Mobile Apps. He put his teeth on all the major Java frameworks and many minor ones.</p>
+        <p>Seven years ago, he fell in love with Scala when it was mostly considered an academic exercise. Fighting the forces of obscurity, he used Scala successfully to build a framework for ECM  applications, now used in a number of banks and telecoms. Nowadays, he is CEO of a Scala focused company,  and he works  building Big Data and Machine Learning applications deployed in the cloud. He strongly believes in Scala not only as a development language but also as a great DevOps tool.</p>
+      </div>,
+    title: 'DevOps for Scala',
+    abstract:
+      <div>
+        <p>Most Scala applications are large scale and need to be deployed in the cloud. In this context, automated deployment is of paramount importance. In this talk I will introduce how you can automate the build and the management of a BigData environment in Amazon AWS, with the help of Scala tools like SBT, Ammonite and Zeppelin and many libraries available in the wild.</p>
+      </div>
+  },
+  gurnell: {
+    name: 'Dave Gurnell',
+    company: 'Underscore',
+    pictureUrl: require('assets/images/speakers/gurnell.jpg'),
+    color: '#1E9481',
+    bio:
+      <div>
+        <p>Dave is a Scala consultant and developer working for Underscore in London, UK.</p>
+        <p>He is the author and co-author of several books on Scala including the <i>Type Astronaut's Guide to Shapeless and Advanced Scala with Cats</i>.</p>
+        <p>He has spoken on Scala and functional programming at numerous conferences worldwide, including Scala World, Scala Days, Scala Exchange, and ICFP.</p>
+      </div>,
+    title: 'Macros versus Shapeless versus Code Generation: What Works, When, and How Much?',
+    abstract:
+      <div>
+        <p>
+          In this talk we will compare three techniques for meta-programming in Scala: macros, shapeless, and code generation. Through a sequence of simple examples we will attempt to characterise the relative pros and cons of each each technique, where they become appropriate, and when they might turn around and bite you.
+        </p>
+        <p>
+          We can solve many Scala programming problems using simple tools: algebraic data types, higher order functions, and type classes. Sometimes, however, the code becomes verbose or unwieldy, and we search for ways to make our code cleaner and more maintainable. “Meta-programming” is a broad term describing techniques for generating code using code, but the meta programming techniques listed above could not be more different. Sometimes, being able to identify the correct technique may save hours of frustration attempting to go down blind alleys. This is the problem we are trying to solve in this talk.
+        </p>
+        <p>
+          The talk is aimed at intermediate Scala developers who have a basic awareness of each technique. You don’t need to know shapeless or macro programming to benefit.
+        </p>
+      </div>
   }
 };

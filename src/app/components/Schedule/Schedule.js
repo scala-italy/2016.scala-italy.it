@@ -22,45 +22,47 @@ export default class Schedule extends React.Component {
         <h3>SCHEDULE</h3>
         <table>
           <tr>
-            <td />
-            <td colSpan={2} className='track-a-title'>TRACK A</td>
+            <td className='time'>09:00 - 09:40</td>
+            <td colSpan={2} className='talk track-a'>
+              Registration and breakfast
+            </td>
           </tr>
           <tr>
-            <td className='time'>09:30 - 10:00</td>
+            <td className='time'>09:40 - 10:00</td>
             <td colSpan={2} className='talk track-a'>
               Opening speech and introduction
             </td>
           </tr>
           <tr>
-            <td className='time'>10:00 - 10:55</td>
+            <td className='time'>10:00 - 10:45</td>
             <td colSpan={2} className='talk track-a'>
-              <a href='#/speakers/allen'>
-                <div>Jamie Allen</div>
-                <div>Reactive Microservices</div>
+              <a href='#/speakers/sabin'>
+                <div>Miles Sabin</div>
+                <div>Typelevel in 2017</div>
               </a>
             </td>
           </tr>
           <tr>
             <td />
             <td colSpan='2' style={{ textAlign: 'center' }}>
-              BREAK
+              COFFEE BREAK
             </td>
           </tr>
           <tr>
-            <td className='time'>11:10 - 11:55</td>
+            <td className='time'>11:05 - 11:50</td>
             <td colSpan={2} className='talk track-a'>
-              <a href='#/speakers/delafargue'>
-                <div>Clement Delafargue</div>
-                <div>Functional patterns for Scala beginners</div>
+              <a href='#/speakers/webber'>
+                <div>Kevin Webber</div>
+                <div>Scala Is The Next Scala</div>
               </a>
             </td>
           </tr>
           <tr>
-            <td className='time'>12:00 - 12:45</td>
+            <td className='time'>11:55 - 12:40</td>
             <td colSpan={2} className='talk track-a'>
-              <a href='#/speakers/geirsson'>
-                <div>Olafur Geirsson</div>
-                <div>Automatic, opinionated code formatting with scalafmt</div>
+              <a href='#/speakers/wehden'>
+                <div>Karl Wehden</div>
+                <div>The batch to streaming journey: Applying Reactive principles to streaming systems in Fast Data</div>
               </a>
             </td>
           </tr>
@@ -78,30 +80,30 @@ export default class Schedule extends React.Component {
           <tr>
             <td className='time'>14:00 - 14:45</td>
             <td className='talk track-a'>
-              <a href='#/speakers/ballin'>
-                <div>Gioia Ballin / Simone Fabiano</div>
-                <div>A dive into Akka Streams: from the basics to a real-world scenario</div>
+              <a href='#/speakers/dotta'>
+                <div>Mirco Dotta / Iulian Dragos</div>
+                <div>Compiling like a boss!</div>
               </a>
             </td>
             <td className='talk track-b'>
-              <a href='#/speakers/mcgonigle'>
-                <div>Seamus Mc Gonigle</div>
-                <div>Reconciling Functional Programming and Exceptions</div>
+              <a href='#/speakers/torreborre'>
+                <div>Eric Torreborre</div>
+                <div>Practical Eff monad for micro-services</div>
               </a>
             </td>
           </tr>
           <tr>
             <td className='time'>14:50 - 15:35</td>
             <td className='talk track-a'>
-              <a href='#/speakers/akhter'>
-                <div>Adil Akhter</div>
-                <div>Functional Stream Processing with Scala</div>
+              <a href='#/speakers/pretty'>
+                <div>Jon Pretty</div>
+                <div>Contextual: Easy, compile-time string interpolation without macros!</div>
               </a>
             </td>
             <td className='talk track-b'>
-              <a href='#/speakers/szulc'>
-                <div>Pawel Szulc</div>
-                <div>Real-World Gobbledygook</div>
+              <a href='#/speakers/gurnell'>
+                <div>Dave Gurnell</div>
+                <div>Macros versus Shapeless versus Code Generation: What Works, When, and How Much?</div>
               </a>
             </td>
           </tr>
@@ -112,33 +114,45 @@ export default class Schedule extends React.Component {
             </td>
           </tr>
           <tr>
-            <td className='time'>15:50 - 16:35</td>
+            <td className='time'>16:00 - 16:45</td>
             <td className='talk track-a'>
-              <a href='#/speakers/bessi'>
-                <div>Andrea Bessi / Emanuele Bezzi</div>
-                <div>Deep Learning with Apache Spark: an Introduction</div>
+              <a href='#/speakers/sfregola'>
+                <div>Daniela Sfregola</div>
+                <div>A practical introduction to Category Theory</div>
               </a>
               <td className='talk track-b'>
-                <a href='#/speakers/vacchi'>
-                  <div>Edoardo Vacchi</div>
-                  <div>Be Like Water — A Shapeless Primer</div>
+                <a href='#/speakers/bernhardt'>
+                  <div>Manuel Bernhardt</div>
+                  <div>8 Akka anti-patterns you'd better be aware of</div>
                 </a>
               </td>
             </td>
           </tr>
           <tr>
-            <td className='time'>16:40 - 17:25</td>
+            <td className='time'>16:50 - 17:35</td>
             <td className='talk track-a'>
-              <a href='#/speakers/petronella'>
-                <div>Gabriele Petronella</div>
-                <div>Monad Transformers: just, why?</div>
+              <a href='#/speakers/lacava'>
+                <div>Alessandro Lacava</div>
+                <div>Raising the abstraction level with HKTs and type classes</div>
               </a>
             </td>
             <td className='talk track-b'>
-              <a href='#/speakers/ratajski'>
-                <div>Jarek Ratajski</div>
-                <div>ScalaJS – web without pain of JavaScript</div>
+              <a href='#/speakers/sciabarra'>
+                <div>Michele Sciabarra</div>
+                <div>DevOps for Scala</div>
               </a>
+            </td>
+          </tr>
+          <tr>
+            <td className='time'>17:35 - 17:50</td>
+            <td colSpan={2} className='talk track-a'>
+              Closing speech
+            </td>
+          </tr>
+          <tr>
+            <td className='time'>18:00</td>
+            <td colSpan={2} className='talk track-a'>
+              Networking aperitivo
             </td>
           </tr>
         </table>
